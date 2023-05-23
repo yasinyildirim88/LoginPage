@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" [ngStyle]="{'background-color': isBackGround == false ? 'rgb(164, 169, 228)' : 'black'}">
+            <img src="/assets/angular.png" alt="">
+            <span>Login</span>
+            <input [placeholder]="loginInputEmailPlaceholder" type="text">
+            <input (input)="getValue($event)" [placeholder]="loginPassPlaceholder" type="text">
+            <button style="width: 100px;height: 20px;margin-top: 10px;"> {{ loginBtnName }} </button>
+            <button style="margin: 10px;" (click)="forgotPassword()">{{ forgotPassBtnName }}</button>
+
+        </div>
+    </div>
+    <div class="container1">
+        <i class="fa-brands fa-angular fa-beat" style="color: #ca180c;"></i>
+    </div>
+
+
+
+
+</body>
+
+</html>
